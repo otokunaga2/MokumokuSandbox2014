@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   def logged_in?
    !!session[:user_id]
   end
-  def ahthenticate
+  def authenticate
     return if logged_in?
     redirect_to root_path, alert: 'ログインしてくださいね'
   end
