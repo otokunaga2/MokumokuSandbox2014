@@ -6,7 +6,12 @@ class Event < ActiveRecord::Base
  validates :start_time, presence: true
  validates :end_time, presence: true
  validate :start_time_should_be_before_end_time
- 
+
+
+def created_by?(user)
+  return flase unless user
+  owner_id == user.id
+end 
  private
 
  def start_time_should_be_before_end_time
