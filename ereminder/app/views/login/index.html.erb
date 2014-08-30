@@ -1,0 +1,7 @@
+<%= @msg %><br />
+<%= form_tag('/') do %>
+ユーザー名：<%= text_field_tag :name %><br />
+パスワード：<%= text_field_tag :pass %><br />
+<%= submit_tag 'ログイン' %><br />
+<%= end %>
+

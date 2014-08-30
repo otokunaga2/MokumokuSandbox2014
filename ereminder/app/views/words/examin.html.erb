@@ -1,0 +1,12 @@
+<!--<h1>To Remeber words</h1>-->
+
+<div class="panel panel-default">
+  <div class="panel-heading"> 
+    <%= link_to 'New Word', new_word_path %>
+    <%= link_to 'remembered', words_confirm_path %>
+  </div>
+
+  <!-- コントローラで入力された値を展開 -->
+  <%= yield %>
+
+</div>

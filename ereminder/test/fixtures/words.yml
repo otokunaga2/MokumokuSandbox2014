@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  wid: 1
+  wordbody: MyString
+  jpbody: MyString
+  remember: false
+
+two:
+  uid: MyString
+  wid: 1
+  wordbody: MyString
+  jpbody: MyString
+  remember: false

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @word.uid %>
+</p>
+
+<p>
+  <strong>Wid:</strong>
+  <%= @word.wid %>
+</p>
+
+<p>
+  <strong>Wordbody:</strong>
+  <%= @word.wordbody %>
+</p>
+
+<p>
+  <strong>Jpbody:</strong>
+  <%= @word.jpbody %>
+</p>
+
+<p>
+  <strong>Remember:</strong>
+  <%= @word.remember %>
+</p>
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

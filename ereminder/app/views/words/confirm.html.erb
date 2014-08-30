@@ -1,0 +1,13 @@
+<!--<h1>To Remeber words</h1>-->
+
+<div class="panel panel-default">
+  <div class="panel-heading"> 
+    <%= link_to 'New Word', new_word_path %>
+  </div>
+
+
+  <%= form_tag('/words/examine', :method=>:post) do %>
+  単語ID<%= text_field_tag :wid %><br />
+  <%= submit_tag 'test' %><br />
+  <% end %>
+</div>
