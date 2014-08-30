@@ -2,8 +2,11 @@ Rails.application.routes.draw do
  # resources :words
  #
  
+ # root to: 'login#index'
   root to: 'words#index'
   get 'words/confirm',to: 'words#confirm'
+  post 'words/examine/:id',to: 'words#examine'
+  post 'words/examine',to: 'words#examine'
   resources :words
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
